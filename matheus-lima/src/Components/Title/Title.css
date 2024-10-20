@@ -1,0 +1,25 @@
+@font-face {
+    font-family:'Montserrat';
+    src: url('/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Agdasima';
+    src: url('/src/assets/fonts/Agdasima/Agdasima-Regular.ttf');
+}
+
+@font-face {
+    font-family: "AgdasimaBold";
+    src: url('/src/assets/fonts/Agdasima/Agdasima-Bold.ttf');
+}
+
+.title{
+    font-family: 'Agdasima';
+    font-size:85px;
+    color: white;
+}
+
+.subtitle{
+        font-family: 'AgdasimaBold';
+        font-size: 65px;
+        color: white;
+}
