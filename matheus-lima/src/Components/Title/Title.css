@@ -12,14 +12,23 @@
     src: url('/src/assets/fonts/Agdasima/Agdasima-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/assets/fonts/Roboto/Roboto-Thin.ttf');
+}
+
 .title{
-    font-family: 'Agdasima';
-    font-size:85px;
+    font-family: 'Roboto';
+    font-size:60px;
     color: white;
 }
 
 .subtitle{
-        font-family: 'AgdasimaBold';
-        font-size: 65px;
+        font-family: 'Agdasima';
+        font-size: 30px;
         color: white;
+}
+
+.title, .subtitle {
+    margin: 0; /* Reseta margens padrão */
 }
