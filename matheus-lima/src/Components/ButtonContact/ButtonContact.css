@@ -13,3 +13,6 @@
     display: flex;
     height: 40px;
 }
+.buttonDiv:hover {
+    background-color:#2C1D80; /* Cor ao passar o mouse */
+}

@@ -6,6 +6,8 @@ export const Title = ({children}) => {
   )
 }
 
+
+
 export const Subtitle = ({children}) =>{
     return(
         <h2 className='subtitle'>{children}</h2>

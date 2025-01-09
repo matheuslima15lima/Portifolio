@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '../Components/Container/Container'
+import { Container, SectionAbout } from '../Components/Container/Container'
 import { Header } from '../Components/Header/Header'
 import { ImageContainer } from '../Components/ImageContainer/ImageContainer'
 import { Subtitle, Title } from '../Components/Title/Title'
@@ -52,6 +52,19 @@ export const Home = () => {
         </article>
         
       </Container>
+
+      <SectionAbout>
+        <Title>Sobre Mim</Title>
+
+        <section className='sectionText'>
+        <p>Olá! Meu nome é Matheus, e sou desenvolvedor de sistemas apaixonado por transformar ideias em soluções digitais. Desde o início da minha jornada em 2023, quando comecei o curso de Desenvolvimento de Sistemas no Senai Info, venho aprimorando minhas habilidades em React, React Native, HTML, CSS, JavaScript, C#, e SQL Server.
+
+Tenho experiência prática com projetos nessas tecnologias, o que me permite criar interfaces modernas, aplicações responsivas e sistemas robustos. Além de resolver problemas com eficiência, adoro aprender coisas novas e me desafiar a construir soluções cada vez melhores.
+
+Minha principal motivação é ajudar empresas e pessoas a alcançar seus objetivos por meio da tecnologia, sempre buscando inovar e agregar valor. Quando não estou codando, gosto de explorar novos conhecimentos e acompanhar as tendências do mundo da tecnologia.</p>
+        </section>
+      
+      </SectionAbout>
 
     </>
 

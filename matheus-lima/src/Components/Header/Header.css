@@ -6,8 +6,11 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+   /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;*/
+   background-color: black;
     position: absolute;
+    align-items: center;
+    justify-content: space-around;
     top: 0;
     left: 0;
     right: 0;
@@ -66,5 +69,9 @@ a {
 
 /* Efeito ao passar o mouse sobre os links */
 a:hover {
-    color: #00ffcc; /* Cor ao passar o mouse */
+    color:#2C1D80; /* Cor ao passar o mouse */
+}
+
+.textHeader{
+    font-size: 15px;
 }

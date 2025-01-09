@@ -1,5 +1,25 @@
+.sectionText{
+  width:704px;
+}
+p{
+  color: white;
+  font-size: 18px;
+}
+
+.sectionAbout{
+  background: black;
+  width: 100%; /* ou uma largura específica */
+  padding-top: 40px; /* Dá espaço suficiente para que o header não sobreponha o conteúdo */
+  position: relative;
+  display: flex;
+  justify-content:space-around;
+ 
+  padding-bottom: 40px;
+  gap: 50px;
+}
 .ContainerBackground{
-    background:  linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+   /* background:  linear-gradient(90deg, #0f2027, #203a43, #2c5364);*/
+   background: black;
     width: 100%; /* ou uma largura específica */
     padding-top: 40px; /* Dá espaço suficiente para que o header não sobreponha o conteúdo */
     position: relative;

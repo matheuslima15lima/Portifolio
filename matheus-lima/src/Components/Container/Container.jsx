@@ -8,3 +8,9 @@ export const Container = ({children}) => {
     
   
 }
+
+export const SectionAbout = ({children})=>{
+        return(<div className='sectionAbout'>
+                {children}
+        </div>)
+}
