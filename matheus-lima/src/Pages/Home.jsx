@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, SectionAbout } from '../Components/Container/Container'
 import { Header } from '../Components/Header/Header'
-import { ImageContainer } from '../Components/ImageContainer/ImageContainer'
+import { ImageContainer, ImageProject } from '../Components/ImageContainer/ImageContainer'
 import { Subtitle, Title } from '../Components/Title/Title'
 import { ButtonContact } from '../Components/ButtonContact/ButtonContact'
 import './Home.css'
@@ -64,6 +64,12 @@ Tenho experiência prática com projetos nessas tecnologias, o que me permite cr
 Minha principal motivação é ajudar empresas e pessoas a alcançar seus objetivos por meio da tecnologia, sempre buscando inovar e agregar valor. Quando não estou codando, gosto de explorar novos conhecimentos e acompanhar as tendências do mundo da tecnologia.</p>
         </section>
       
+      </SectionAbout>
+
+      <SectionAbout>
+        <ImageProject>
+          <h3>fif</h3>
+        </ImageProject>
       </SectionAbout>
 
     </>

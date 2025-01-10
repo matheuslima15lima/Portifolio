@@ -4,3 +4,10 @@
 border: 2px solid white;
 background-color: gray;
 }
+
+.image-pro{
+    height: 600px;
+    width: 600px;
+    background-color: #1A1A1A;
+    border: 1px solid white;
+}

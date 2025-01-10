@@ -7,7 +7,7 @@ p{
 }
 
 .sectionAbout{
-  background: black;
+  background:#2C1D80;
   width: 100%; /* ou uma largura específica */
   padding-top: 40px; /* Dá espaço suficiente para que o header não sobreponha o conteúdo */
   position: relative;
@@ -19,7 +19,7 @@ p{
 }
 .ContainerBackground{
    /* background:  linear-gradient(90deg, #0f2027, #203a43, #2c5364);*/
-   background: black;
+   background: #0A0A0A;
     width: 100%; /* ou uma largura específica */
     padding-top: 40px; /* Dá espaço suficiente para que o header não sobreponha o conteúdo */
     position: relative;

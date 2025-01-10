@@ -15,3 +15,11 @@ export const ImageContainer = () => {
     </div>
   )
 }
+export const ImageProject = ({children}) => {
+  return (
+    <div className='image-pro'>
+     {children}
+     
+    </div>
+  )
+}
