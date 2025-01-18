@@ -10,7 +10,7 @@ export const Container = ({children}) => {
 }
 
 export const SectionAbout = ({children})=>{
-        return(<div className='sectionAbout'>
+        return(<section className='sectionAbout'>
                 {children}
-        </div>)
+        </section>)
 }

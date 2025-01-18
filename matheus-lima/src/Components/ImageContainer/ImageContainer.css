@@ -10,4 +10,7 @@ background-color: gray;
     width: 600px;
     background-color: #1A1A1A;
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

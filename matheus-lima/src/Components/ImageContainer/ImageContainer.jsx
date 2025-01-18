@@ -19,7 +19,6 @@ export const ImageProject = ({children}) => {
   return (
     <div className='image-pro'>
      {children}
-     
     </div>
   )
 }

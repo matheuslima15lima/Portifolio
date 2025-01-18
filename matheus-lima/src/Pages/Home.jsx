@@ -5,7 +5,8 @@ import { ImageContainer, ImageProject } from '../Components/ImageContainer/Image
 import { Subtitle, Title } from '../Components/Title/Title'
 import { ButtonContact } from '../Components/ButtonContact/ButtonContact'
 import './Home.css'
-
+import { ContainerProjects } from '../Components/ContainerProjects/ContainerProjects'
+import image from '../assets/images/work.png';
 export const Home = () => {
   return (
     <>
@@ -65,12 +66,10 @@ Minha principal motivação é ajudar empresas e pessoas a alcançar seus objeti
         </section>
       
       </SectionAbout>
-
-      <SectionAbout>
-        <ImageProject>
-          <h3>fif</h3>
-        </ImageProject>
-      </SectionAbout>
+          <ContainerProjects
+            image={image}
+          />
+  
 
     </>
 
