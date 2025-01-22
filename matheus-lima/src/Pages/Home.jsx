@@ -67,7 +67,15 @@ Minha principal motivação é ajudar empresas e pessoas a alcançar seus objeti
       
       </SectionAbout>
           <ContainerProjects
+            project={"Event+"}
+            description={"O Event+ é um sistema feito para o gerenciamento de eventos, onde o usuário pode cadastrar editar e deletar eventos e o usuário pode se conectar a um evento e comentar sobre eles. Os comentários possuem IA que reconhece palvras obscenas, assim não exibindo os comentários que as contém."}
             image={image}
+          />
+          <ContainerProjects
+            project={"Event+"}
+            description={"O Event+ é um sistema feito para o gerenciamento de eventos, onde o usuário pode cadastrar editar e deletar eventos e o usuário pode se conectar a um evento e comentar sobre eles. Os comentários possuem IA que reconhece palvras obscenas, assim não exibindo os comentários que as contém."}
+            image={image}
+            usedTec={"HTML, CSS, React.js JavaScript, C#, SQL Server"}
           />
   
 
