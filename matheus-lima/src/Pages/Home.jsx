@@ -70,6 +70,7 @@ Minha principal motivação é ajudar empresas e pessoas a alcançar seus objeti
             project={"Event+"}
             description={"O Event+ é um sistema feito para o gerenciamento de eventos, onde o usuário pode cadastrar editar e deletar eventos e o usuário pode se conectar a um evento e comentar sobre eles. Os comentários possuem IA que reconhece palvras obscenas, assim não exibindo os comentários que as contém."}
             image={image}
+            link={"https://eventplusmatheuslimacav.vercel.app/"}
           />
           <ContainerProjects
             project={"Event+"}

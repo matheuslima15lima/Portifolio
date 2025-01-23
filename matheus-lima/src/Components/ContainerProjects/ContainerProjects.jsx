@@ -3,7 +3,7 @@ import { SectionAbout } from '../Container/Container'
 import { ImageProject } from '../ImageContainer/ImageContainer'
 import './ContainerProjects.css'
 import { Title } from '../Title/Title'
-export const ContainerProjects=({image, project, description , usedTec})=>{
+export const ContainerProjects=({image, project, description , usedTec, link})=>{
   return (
     <SectionAbout>
     <ImageProject>
@@ -12,12 +12,13 @@ export const ContainerProjects=({image, project, description , usedTec})=>{
 
     <div className='divText'>
       <Title>{project}</Title>
-    <p>{description}</p>
+    <p >{description}</p>
 
-    <div>
+    <div >
     <p>Tecnologias:</p>
       <p>{usedTec}</p>
     </div>
+    <a href={link}>Ver projeto</a>
 
     </div>
   </SectionAbout>

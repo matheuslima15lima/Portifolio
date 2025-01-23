@@ -7,7 +7,8 @@ p{
 }
 
 .sectionAbout{
-  background:#2C1D80;
+  /* background:#2C1D80; */
+  background: #0A0A0A;
   width: 100%; /* ou uma largura específica */
   padding-top: 40px; /* Dá espaço suficiente para que o header não sobreponha o conteúdo */
   position: relative;
