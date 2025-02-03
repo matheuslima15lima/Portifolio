@@ -7,6 +7,7 @@ import { ButtonContact } from '../Components/ButtonContact/ButtonContact'
 import './Home.css'
 import { ContainerProjects } from '../Components/ContainerProjects/ContainerProjects'
 import image from '../assets/images/work.png';
+import { Slides } from '../Components/Slides/Slides'
 export const Home = () => {
   return (
     <>
@@ -79,7 +80,10 @@ Minha principal motivação é ajudar empresas e pessoas a alcançar seus objeti
             usedTec={"HTML, CSS, React.js JavaScript, C#, SQL Server"}
           />
   
+       
 
+          <Slides/>
+           
     </>
 
 
