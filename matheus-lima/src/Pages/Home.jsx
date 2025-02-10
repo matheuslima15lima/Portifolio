@@ -7,7 +7,9 @@ import { ButtonContact } from '../Components/ButtonContact/ButtonContact'
 import './Home.css'
 import { ContainerProjects } from '../Components/ContainerProjects/ContainerProjects'
 import image from '../assets/images/work.png';
-import { Slides } from '../Components/Slides/Slides'
+import { Slides } from '../Components/Slides/Slides';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 export const Home = () => {
   return (
     <>
@@ -84,6 +86,28 @@ Minha principal motivação é ajudar empresas e pessoas a alcançar seus objeti
 
           <Slides/>
            
+           <footer className='footer-home'>
+            <div className='div-footer'>
+
+              <a  className='link-footer' href='https://www.linkedin.com/in/-matheus-lima/'>
+              <FaLinkedinIn style={{
+            width:24,
+            height:24
+           }}/>
+              </a>
+          
+              <a className='link-footer' href='https://github.com/matheuslima15lima'>
+              <FaGithub
+            style={{
+              width:24,
+              height:24
+            }}
+           />
+              </a>
+           
+            </div>
+            <p className='text-footer'>© 2025 Matheus Lima Cavalcanti. Todos os direitos reservados.</p>
+           </footer>
     </>
 
 

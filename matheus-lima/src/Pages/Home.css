@@ -2,9 +2,36 @@
     font-family: 'Agdasima';
     src: url('/src/assets/fonts/Agdasima/Agdasima-Regular.ttf');
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf');
+}
 h1{
     font-size: 25px;
     color: white;
     font-family: 'Agdasima';
     font-weight: 300;
+}
+.footer-home{
+    display: flex;
+    height:100px;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-footer{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: black;
+}
+.div-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+    width: 20%;
+    
+}
+.link-footer{
+    color: black;
 }
