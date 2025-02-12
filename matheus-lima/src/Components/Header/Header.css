@@ -3,8 +3,33 @@
     src: url('/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
-
+.nav-bar.open {
+    left: 0; /* Mostra o menu no mobile */
+  }
 @media (max-width: 768px) {
+   /* Ícone do menu (aparece no mobile) */
+.menu-icon {
+    /* display: none; Esconde no desktop */
+    display: block;
+    color: white;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    top: 40px; /* Ajuste a distância do topo */
+    left: 40px; /* Ajuste a distância da esquerda */
+   z-index: 110; /* Garante que esteja acima de outros elementos*/
+  }
+    .xspan{
+        color: white;
+        font-size: 24px ;
+        position: fixed; /* Fixa o span em relação à janela */
+        top: 12px; /* Distância do topo da tela */
+        left: 16px; /* Distância da borda esquerda da tela */
+        cursor: pointer;
+        z-index: 200; 
+        /* Garante que o xspan fique acima de outros elementos */
+        /* display: none; */
+    }
     .nav-bar {
         display: flex;
         flex-direction: column;
@@ -14,7 +39,7 @@
         align-items: center;
         justify-content: center;
         top: 10px;
-        left: 10px;
+        left: -100%; /* Esconde fora da tela no mobile */
         right: 0;
         /* height: 60px; Altura do header */
         z-index: 100; /* Garante que o header esteja acima do container */
@@ -22,15 +47,19 @@
         width: 40%;
         /* padding: 20px; */
         height: 250px;
+        transition: left 0.3s ease;
+        
     }
     
 
     /* Remover estilos padrão do <ul> */
 ul {
+   
     list-style: none; /* Remove os marcadores de lista */
     padding: 0; /* Remove o padding padrão */
     margin: 0; /* Remove a margem padrão */
-    display: flex; /* Coloca os itens <li> em linha */
+    display: flex;
+     /* Coloca os itens <li> em linha */
     flex-direction: column;
     justify-content: space-around; /* Distribui os itens horizontalmente */
     width: 100%;
@@ -84,11 +113,9 @@ a:hover {
   
 }
 
-
-
-
-
-
+.xspan{
+    display: none;
+}
 /* Remover estilos padrão do <ul> */
 ul {
     list-style: none; /* Remove os marcadores de lista */
