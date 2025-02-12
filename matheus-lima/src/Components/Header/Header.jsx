@@ -6,7 +6,8 @@ export const Header = () => {
     <div className='nav-bar'>
 
     
-      
+      {/* <button className='close-button'>x</button> */}
+      <span style={{ color: 'red', fontSize: '24px' }}>x</span>
   <ul>
     <li><a href="#about" className='textHeader'>Sobre</a></li>
     <li><a href="#services"className='textHeader'>Habilidades</a></li>
