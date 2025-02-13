@@ -61,7 +61,7 @@ export const Home = () => {
         <Title>Sobre Mim</Title>
 
         <section className='sectionText'>
-        <p>Olá! Meu nome é Matheus, e sou desenvolvedor de sistemas apaixonado por transformar ideias em soluções digitais. Desde o início da minha jornada em 2023, quando comecei o curso de Desenvolvimento de Sistemas no Senai Info, venho aprimorando minhas habilidades em React, React Native, HTML, CSS, JavaScript, C#, e SQL Server.
+        <p className='text-about'>Olá! Meu nome é Matheus, e sou desenvolvedor de sistemas apaixonado por transformar ideias em soluções digitais. Desde o início da minha jornada em 2023, quando comecei o curso de Desenvolvimento de Sistemas no Senai Info, venho aprimorando minhas habilidades em React, React Native, HTML, CSS, JavaScript, C#, e SQL Server.
 
 Tenho experiência prática com projetos nessas tecnologias, o que me permite criar interfaces modernas, aplicações responsivas e sistemas robustos. Além de resolver problemas com eficiência, adoro aprender coisas novas e me desafiar a construir soluções cada vez melhores.
 

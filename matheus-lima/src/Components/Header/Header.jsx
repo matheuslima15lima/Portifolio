@@ -16,15 +16,15 @@ alert('Você clicou no X!');
     <header className='header'>
     
 
-    <IoMenu className='menu-icon' style={{color: 'white', width:'24px', height:'24px' , cursor: 'pointer'}}
+    <IoMenu className='menu-icon' style={{color: 'white', width:'40px', height:'40px' , cursor: 'pointer'}}
       onClick={toggleMenu}
     />
 
     <div className={`nav-bar ${isMenuOpen ? 'open' : ''}`}>
 
-    {isMenuOpen && (
+    {isMenuOpen?(
   <span className='xspan' onClick={toggleMenu}>x</span>
-)}
+) : null}
     
   <ul>
     <li><a href="#about" className='textHeader'>Sobre</a></li>
