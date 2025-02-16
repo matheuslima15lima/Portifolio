@@ -9,7 +9,13 @@
 
 @media (max-width: 768px) {
     .text-about{
-        font-size: 15px;
+        font-size: 14px;
+    }
+    .sectionText{
+        width: 90%;
+        margin: 0px;
+        height: 10%;
+        text-align: left;
     }
 }
 h1{

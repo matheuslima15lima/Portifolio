@@ -6,3 +6,15 @@
    width:486px;
    height:347px;
 }
+
+
+@media (max-width: 768px) {
+   .img{
+      width:80%;
+      height:300px;
+   }
+
+   .divText{
+      width: 80%;
+   }
+}
