@@ -48,3 +48,13 @@ h1{
 .link-footer{
     color: black;
 }
+
+@media (max-width: 768px) {
+    .footer-home{
+        height:auto;
+        /* padding-bottom: 40px; */
+        /* align-items: center; */
+        margin-top: 10px;
+    }
+        
+}

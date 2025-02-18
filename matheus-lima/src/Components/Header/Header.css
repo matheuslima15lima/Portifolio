@@ -110,7 +110,7 @@ a:hover {
     right: 0;
     height: 60px; /* Altura do header */
     z-index: 100; /* Garante que o header esteja acima do container */
-  
+    width: 100%;
 }
 
 .xspan{
