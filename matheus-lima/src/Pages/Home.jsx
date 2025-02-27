@@ -12,7 +12,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 export const Home = () => {
   return (
-    <>
+    <div className='container'>
       <Header />
       <Container>
         
@@ -108,7 +108,7 @@ Minha principal motivação é ajudar empresas e pessoas a alcançar seus objeti
             </div>
             <p className='text-footer'>© 2025 Matheus Lima Cavalcanti. Todos os direitos reservados.</p>
            </footer>
-    </>
+    </div>
 
 
   )

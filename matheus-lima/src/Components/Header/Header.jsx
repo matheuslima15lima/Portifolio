@@ -26,11 +26,15 @@ alert('Você clicou no X!');
   <span className='xspan' onClick={toggleMenu}>x</span>
 ) : null}
     
+   <div className='div-content'>
+    
   <ul>
     <li><a href="#about" className='textHeader'>Sobre</a></li>
     <li><a href="#services"className='textHeader'>Habilidades</a></li>
     <li><a href="#contact"className='textHeader'>Projetos</a></li>
   </ul>
+    </div> 
+
     </div>
 
     </header>

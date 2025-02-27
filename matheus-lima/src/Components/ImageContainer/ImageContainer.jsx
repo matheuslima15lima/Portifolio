@@ -10,7 +10,7 @@ export const ImageContainer = () => {
       textAlign: 'center',
       borderRadius: '8px' /* Exemplo de outra propriedade com string */
     }}>
-     <img src="../../assets/images/images.jpeg" className='image-con'/>
+     <img src="../../assets/images/images.jpeg" className='image-con'alt="foto de Matheus Lima"/>
      
     </div>
   )

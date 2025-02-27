@@ -48,6 +48,10 @@ h1{
 .link-footer{
     color: black;
 }
+/* .container{
+    margin-top: 0;
+    overflow-y: auto;
+} */
 
 @media (max-width: 768px) {
     .footer-home{
@@ -55,6 +59,9 @@ h1{
         /* padding-bottom: 40px; */
         /* align-items: center; */
         margin-top: 10px;
+    }
+    .container{
+        margin-top: 0;
     }
         
 }

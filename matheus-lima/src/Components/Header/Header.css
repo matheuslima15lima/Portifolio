@@ -1,152 +1,203 @@
 @font-face {
-    font-family:'Montserrat';
+    font-family: 'Montserrat';
     src: url('/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
 .nav-bar.open {
-    left: 0; /* Mostra o menu no mobile */
-  }
+    left: 0;
+    /* Mostra o menu no mobile */
+}
+
 @media (max-width: 768px) {
-   /* Ícone do menu (aparece no mobile) */
-.menu-icon {
-    /* display: none; Esconde no desktop */
-    display: block;
-    color: white;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    top: 40px; /* Ajuste a distância do topo */
-    left: 40px; /* Ajuste a distância da esquerda */
-   z-index: 110; /* Garante que esteja acima de outros elementos*/
-  }
-    .xspan{
+
+    /* Ícone do menu (aparece no mobile) */
+    .menu-icon {
+        /* display: none; Esconde no desktop */
+        display: block;
         color: white;
-        font-size: 24px ;
-        position: fixed; /* Fixa o span em relação à janela */
-        top: 12px; /* Distância do topo da tela */
-        left: 16px; /* Distância da borda esquerda da tela */
+        width: 24px;
+        height: 24px;
         cursor: pointer;
-        z-index: 200; 
+        top: 40px;
+        /* Ajuste a distância do topo */
+        left: 40px;
+        /* Ajuste a distância da esquerda */
+        z-index: 110;
+        /* Garante que esteja acima de outros elementos*/
+    }
+
+    .xspan {
+        color: white;
+        font-size: 24px;
+        position: fixed;
+        /* Fixa o span em relação à janela */
+        top: 12px;
+        /* Distância do topo da tela */
+        left: 16px;
+        /* Distância da borda esquerda da tela */
+        cursor: pointer;
+        z-index: 200;
         /* Garante que o xspan fique acima de outros elementos */
         /* display: none; */
     }
-    .nav-bar {
+
+    .div-content {
         display: flex;
         flex-direction: column;
-       /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;*/
-       background-color:#0A0A0A;
-        position: absolute;
+        border: 2px solid yellow;
+        left: -500px;
+        right: 0;
+        height: 250px;
+        transition: left 0.3s ease;
         align-items: center;
         justify-content: center;
         top: 10px;
-        left: -100%; /* Esconde fora da tela no mobile */
-        right: 0;
-        /* height: 60px; Altura do header */
-        z-index: 100; /* Garante que o header esteja acima do container */
-        border: 2px solid white;
         width: 40%;
-        /* padding: 20px; */
-        height: 250px;
-        transition: left 0.3s ease;
-        
     }
-    
+
+    .nav-bar {
+        margin-top: 0;
+        display: flex;
+        /* flex-direction: column; */
+        /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;*/
+        background-color: #0A0A0A;
+        position: absolute;
+        /* align-items: center;
+        justify-content: center; */
+        top: 10px;
+        /* Esconde fora da tela no mobile */
+        /* left: -100%;  */
+        /* right: 0; */
+        height: 60px;
+        z-index: 100;
+        /* Garante que o header esteja acima do container */
+        /* border: 2px solid white; */
+        width: 100%;
+        /* padding: 20px; */
+        /* height: 250px; */
+        transition: left 0.3s ease;
+
+    }
+
 
     /* Remover estilos padrão do <ul> */
-ul {
-   
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    display: flex;
-     /* Coloca os itens <li> em linha */
-    flex-direction: column;
-    justify-content: space-around; /* Distribui os itens horizontalmente */
-    width: 100%;
-    gap: 30px;
-}
+    ul {
 
-/* Estilo dos itens <li> */
-li {
-    /* margin-right: 20px; Espaço entre os itens, ajuste conforme necessário */
-    font-size: 1rem; 
-    font-family: 'Montserrat';
-}
+        list-style: none;
+        /* Remove os marcadores de lista */
+        padding: 0;
+        /* Remove o padding padrão */
+        margin: 0;
+        /* Remove a margem padrão */
+        display: flex;
+        /* Coloca os itens <li> em linha */
+        flex-direction: column;
+        justify-content: space-around;
+        /* Distribui os itens horizontalmente */
+        width: 100%;
+        gap: 30px;
+    }
 
-/* Estilo dos links dentro dos itens da lista */
-a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: white; /* Cor dos links */
-    font-weight: bold; /* Deixa o texto em negrito */
-}
+    /* Estilo dos itens <li> */
+    li {
+        /* margin-right: 20px; Espaço entre os itens, ajuste conforme necessário */
+        font-size: 1rem;
+        font-family: 'Montserrat';
+    }
 
-/* Efeito ao passar o mouse sobre os links */
-a:hover {
-    color:#2C1D80; /* Cor ao passar o mouse */
-}
+    /* Estilo dos links dentro dos itens da lista */
+    a {
+        text-decoration: none;
+        /* Remove o sublinhado dos links */
+        color: white;
+        /* Cor dos links */
+        font-weight: bold;
+        /* Deixa o texto em negrito */
+    }
 
-.textHeader{
-    font-size: 15px;
-}
+    /* Efeito ao passar o mouse sobre os links */
+    a:hover {
+        color: #2C1D80;
+        /* Cor ao passar o mouse */
+    }
 
-    
-  
+    .textHeader {
+        font-size: 15px;
+    }
+
+
+
 }
 
 @media (min-width: 769px) {
+    .div-content {
+        border: 2px solid yellow;
+    }
 
+    /* Estilo da barra de navegação */
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;*/
+        background-color: #0A0A0A;
+        position: absolute;
+        align-items: center;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        /* Altura do header */
+        z-index: 100;
+        /* Garante que o header esteja acima do container */
+        width: 100%;
+    }
 
-/* Estilo da barra de navegação */
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-   /* box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;*/
-   background-color:#0A0A0A;
-    position: absolute;
-    align-items: center;
-    justify-content: space-around;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px; /* Altura do header */
-    z-index: 100; /* Garante que o header esteja acima do container */
-    width: 100%;
-}
+    .xspan {
+        display: none;
+    }
 
-.xspan{
-    display: none;
-}
-/* Remover estilos padrão do <ul> */
-ul {
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    display: flex; /* Coloca os itens <li> em linha */
-    flex-direction: row;
-    justify-content: space-around; /* Distribui os itens horizontalmente */
-    width: 100%;
-}
+    /* Remover estilos padrão do <ul> */
+    ul {
+        list-style: none;
+        /* Remove os marcadores de lista */
+        padding: 0;
+        /* Remove o padding padrão */
+        margin: 0;
+        /* Remove a margem padrão */
+        display: flex;
+        /* Coloca os itens <li> em linha */
+        flex-direction: row;
+        justify-content: space-around;
+        /* Distribui os itens horizontalmente */
+        width: 100%;
+    }
 
-/* Estilo dos itens <li> */
-li {
-    margin-right: 20px; /* Espaço entre os itens, ajuste conforme necessário */
-    font-size: 1rem; 
-    font-family: 'Montserrat';
-}
+    /* Estilo dos itens <li> */
+    li {
+        margin-right: 20px;
+        /* Espaço entre os itens, ajuste conforme necessário */
+        font-size: 1rem;
+        font-family: 'Montserrat';
+    }
 
-/* Estilo dos links dentro dos itens da lista */
-a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: white; /* Cor dos links */
-    font-weight: bold; /* Deixa o texto em negrito */
-}
+    /* Estilo dos links dentro dos itens da lista */
+    a {
+        text-decoration: none;
+        /* Remove o sublinhado dos links */
+        color: white;
+        /* Cor dos links */
+        font-weight: bold;
+        /* Deixa o texto em negrito */
+    }
 
-/* Efeito ao passar o mouse sobre os links */
-a:hover {
-    color:#2C1D80; /* Cor ao passar o mouse */
-}
+    /* Efeito ao passar o mouse sobre os links */
+    a:hover {
+        color: #2C1D80;
+        /* Cor ao passar o mouse */
+    }
 
-.textHeader{
-    font-size: 15px;
-}
+    .textHeader {
+        font-size: 15px;
+    }
 }
