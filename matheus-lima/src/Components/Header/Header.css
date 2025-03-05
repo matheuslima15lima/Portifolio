@@ -3,16 +3,37 @@
     src: url('/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
-.nav-bar.open {
-    left: 0;
+.div-content.open { 
     /* Mostra o menu no mobile */
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid yellow;
+    /* left: -500px; */
+    /* right: 0; */
+    height: 250px;
+    transition: left 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    width: 40%;
+    /* gap:13px; */
+}
+.ul.open{
+    /* position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green; */
+    
+   
+    
 }
 
 @media (max-width: 768px) {
 
     /* Ícone do menu (aparece no mobile) */
     .menu-icon {
-        /* display: none; Esconde no desktop */
         display: block;
         color: white;
         width: 24px;
@@ -36,26 +57,33 @@
         left: 16px;
         /* Distância da borda esquerda da tela */
         cursor: pointer;
-        z-index: 200;
         /* Garante que o xspan fique acima de outros elementos */
+        z-index: 200;
         /* display: none; */
     }
 
     .div-content {
         display: flex;
-        flex-direction: column;
-        border: 2px solid yellow;
-        left: -500px;
+        flex-direction: row;
+        border: 2px solid red;
+        left:0;
         right: 0;
         height: 250px;
-        transition: left 0.3s ease;
+        /* transition: left 0.3s ease; */
         align-items: center;
         justify-content: center;
         top: 10px;
-        width: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    .ul{
+        display: none;
+
+        
     }
 
     .nav-bar {
+        /* border: 2px white; */
         margin-top: 0;
         display: flex;
         /* flex-direction: column; */
@@ -82,27 +110,36 @@
 
     /* Remover estilos padrão do <ul> */
     ul {
-
         list-style: none;
         /* Remove os marcadores de lista */
         padding: 0;
         /* Remove o padding padrão */
-        margin: 0;
+        margin-top: 10px;
         /* Remove a margem padrão */
         display: flex;
         /* Coloca os itens <li> em linha */
         flex-direction: column;
-        justify-content: space-around;
+        justify-content:center;
+        align-items: center;
         /* Distribui os itens horizontalmente */
-        width: 100%;
-        gap: 30px;
+        width:120px;
+        /* left: 70px; */
+        gap: 35px;
+        align-items: center;
+        border:3px solid green; 
+        border-radius: 10px;
+        height: 200px;
+        /* padding-top: 10px; */
     }
 
     /* Estilo dos itens <li> */
     li {
         /* margin-right: 20px; Espaço entre os itens, ajuste conforme necessário */
-        font-size: 1rem;
+        font-size: 10px;
         font-family: 'Montserrat';
+    }
+    .textHeader{
+        font-size: 14px;
     }
 
     /* Estilo dos links dentro dos itens da lista */
@@ -121,9 +158,7 @@
         /* Cor ao passar o mouse */
     }
 
-    .textHeader {
-        font-size: 15px;
-    }
+   
 
 
 
@@ -200,4 +235,11 @@
     .textHeader {
         font-size: 15px;
     }
+
+    /* .header{
+        position:fixed;
+    } */
+     .menu-icon{
+        display: none;
+     }
 }
