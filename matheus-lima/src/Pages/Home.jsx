@@ -14,8 +14,11 @@ export const Home = () => {
   return (
     <div className='container'>
       <Header />
+      {/* <aside className='sideBar'>
+      <h1>fddef</h1>
+    </aside>    */}
       <Container>
-        
+
         <article style={{
           marginTop:20
         }}>

@@ -63,5 +63,18 @@ h1{
     .container{
         margin-top: 0;
     }
+
+    .sideBar{
+        width: 30%;
+        height: 80%;
+        padding-left: 15px;
+        margin-left: 15px;
+        /* float: right;
+        font-style: italic; */
+        background-color: black;
+        border: 2px,solid ,white;
+        position: fixed;
+
+      }
         
 }

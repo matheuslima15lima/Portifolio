@@ -3,12 +3,12 @@
     src: url('/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
-.div-content.open { 
+.div-content.open {
     /* Mostra o menu no mobile */
     left: 10px;
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     /* left: -500px; */
     /* right: 0; */
     height: 250px;
@@ -18,16 +18,18 @@
     top: 10px;
     width: 40%;
     /* gap:13px; */
+
 }
-.ul.open{
+
+.ul.open {
     /* position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid green; */
-    
-   
-    
+    margin-top: 70px;
+    background-color: blue;
+
 }
 
 @media (max-width: 768px) {
@@ -47,39 +49,25 @@
         /* Garante que esteja acima de outros elementos*/
     }
 
-    .xspan {
-        color: white;
-        font-size: 24px;
-        position: fixed;
-        /* Fixa o span em relação à janela */
-        top: 12px;
-        /* Distância do topo da tela */
-        left: 16px;
-        /* Distância da borda esquerda da tela */
-        cursor: pointer;
-        /* Garante que o xspan fique acima de outros elementos */
-        z-index: 200;
-        /* display: none; */
-    }
-
     .div-content {
         display: flex;
         flex-direction: row;
         border: 2px solid red;
-        left:0;
+        left: 0;
         right: 0;
         height: 250px;
         /* transition: left 0.3s ease; */
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         top: 10px;
         width: 100%;
         height: 100%;
     }
-    .ul{
+
+    .ul {
         display: none;
 
-        
+
     }
 
     .nav-bar {
@@ -103,7 +91,7 @@
         width: 100%;
         /* padding: 20px; */
         /* height: 250px; */
-        transition: left 0.3s ease;
+
 
     }
 
@@ -112,24 +100,32 @@
     ul {
         list-style: none;
         /* Remove os marcadores de lista */
-        padding: 0;
+       
         /* Remove o padding padrão */
-        margin-top: 10px;
+        margin-top: 0px;
         /* Remove a margem padrão */
         display: flex;
         /* Coloca os itens <li> em linha */
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         /* Distribui os itens horizontalmente */
-        width:120px;
+        width: 220px;
         /* left: 70px; */
-        gap: 35px;
+        gap: 55px;
         align-items: center;
-        border:3px solid green; 
+        /* border:3px solid green;  */
         border-radius: 10px;
         height: 200px;
+        transition: left 0.3s ease;
         /* padding-top: 10px; */
+        background-color: rgba(255, 255, 255, 0.1);
+        /* branco translúcido */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px 20px;
+        
     }
 
     /* Estilo dos itens <li> */
@@ -138,7 +134,8 @@
         font-size: 10px;
         font-family: 'Montserrat';
     }
-    .textHeader{
+
+    .textHeader {
         font-size: 14px;
     }
 
@@ -158,7 +155,7 @@
         /* Cor ao passar o mouse */
     }
 
-   
+
 
 
 
@@ -239,7 +236,7 @@
     /* .header{
         position:fixed;
     } */
-     .menu-icon{
+    .menu-icon {
         display: none;
-     }
+    }
 }

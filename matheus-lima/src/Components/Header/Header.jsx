@@ -14,32 +14,20 @@ export const Header = () => {
   }
   return (
     <header className='header'>
-
-
-      <IoMenu className='menu-icon' style={{ color: 'white', width: '40px', height: '40px', cursor: 'pointer' }}
-        onClick={toggleMenu}
-      />
-
-      <div className= "nav-bar" >
-
-
-          <IoMenu className='menu-icon' style={{ color: 'white', width: '24px', height: '24px', cursor: 'pointer', marginLeft:'50px'}}
-      onClick={toggleMenu}
-    />
-
-        <div className={`div-content${isMenuOpen ? 'open' : ''}`}>
-          {/* {isMenuOpen?(
-) : null} */}
-          {/* <span className='xspan' onClick={toggleMenu}>x</span> */}
-          <ul className={`ul${isMenuOpen ? 'open' : ''}`}>
-            <li><a href="#about" className='textHeader'>Sobre</a></li>
-            <li><a href="#services" className='textHeader'>Habilidades</a></li>
-            <li><a href="#contact" className='textHeader'>Projetos</a></li>
-          </ul>
+      <div className="nav-bar" >
+        <div className={`div-content`}>
+          <IoMenu className='menu-icon' style={{ color: 'white', width: '24px', height: '24px', cursor: 'pointer', marginLeft: '50px' }}
+            onClick={toggleMenu}
+          />
         </div>
 
+        <ul className={`ul${isMenuOpen ? 'open' : ''}`}>
+          <li><a href="#about" className='textHeader'>Sobre</a></li>
+          <li><a href="#services" className='textHeader'>Habilidades</a></li>
+          <li><a href="#contact" className='textHeader'>Projetos</a></li>
+        </ul>
       </div>
 
-    </header>
+    </header >
   )
 }
