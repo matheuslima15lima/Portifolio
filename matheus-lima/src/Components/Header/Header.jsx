@@ -16,7 +16,7 @@ export const Header = () => {
     <header className='header'>
       <div className="nav-bar" >
         <div className={`div-content`}>
-          <IoMenu className='menu-icon' style={{ color: 'white', width: '24px', height: '24px', cursor: 'pointer', marginLeft: '50px' }}
+          <IoMenu className='menu-icon' style={{ color: 'white', width: '30px', height: '30px', cursor: 'pointer', marginLeft: '10px' }}
             onClick={toggleMenu}
           />
         </div>
